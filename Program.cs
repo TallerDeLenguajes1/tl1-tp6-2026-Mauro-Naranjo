@@ -71,4 +71,4 @@ do
     Console.WriteLine("Desea realizar otra operacion? (s/n)");
     repetir = Console.ReadLine()[0];
 } while (repetir == 's' || repetir == 'S');
-    Console.WriteLine("");
+    //Console.WriteLine("");
