@@ -1,0 +1,3 @@
+1. ¿String es una tipo por valor o un tipo por referencia? Es un tipo por referencia.
+2. ¿Qué secuencias de escape tiene el tipo string? Las secuencias de escape mas utilizadas en un string son: salto de linea(\n), retorno de carro (\r), tabulacion horizontal (\t), barra invertida(\\), comillas dobles(\"), comilla simple('), caracter nulo(\0), salto de pagina(\f) y tabulacion vertical(\v).
+3. ¿Qué sucede cuando utiliza el carácter @ y $ antes de una cadena de texto? El caracter @ hace que las secuencias de escape no se interpreten y tambien permite escribir texto en varias lineas y el caracter $ permite insertar variables o expresiones dentro del texto usando {}. Estos caracteres se pueden combinar sin importar el orden
