@@ -29,7 +29,7 @@ if (int.TryParse(Console.ReadLine(), out c))
     Console.WriteLine("Es numero ingresado no es valido");
 }
 
-int opcion, resultado, num1, num2;
+int opcion, resultado=0, num1, num2;
 char repetir;
 
 do
@@ -113,4 +113,62 @@ if (nuevoNum > nuevoNum2)
 } else
 {
     Console.WriteLine("El maximo entre los dos numeros es:"+nuevoNum2);
+}
+
+//ejercicio 4
+/*Conversor de tipo: ToString()
+Comparador de cadenas: Compare(), CompareTo() == y !=
+Mayúsculas y minúsculas: ToUpper() o ToLower()
+Acceso a los caracteres individuales: SubString(), Replace(),Split() y Trim(),
+Búsqueda y manipulación de una cadena: IndexOf() LastIndexOf, StartsWith y
+EndsWith. Split()*/
+
+Console.WriteLine("Ingrese una cadena de texto: ");
+string cadena = Console.ReadLine();
+
+//longitud de la cadena
+Console.WriteLine("La longitud de la cadena es: "+cadena.Length);
+
+Console.WriteLine("Ingrese otra cadena de texto: ");
+string cadena2 = Console.ReadLine();
+
+//concatenar cadenas
+string concatenada = $"{cadena} {cadena2}";
+Console.WriteLine("cadena concatenada: "+concatenada);
+
+//extraer subcadena
+string subcadena = concatenada.Substring(0, 2);
+Console.WriteLine("subcadena extraida: "+subcadena);
+
+//muestra de resultado
+Console.WriteLine($"la resta de {num1} y {num2} es igual a: {resultado}");
+
+//recorrer cadena
+foreach (var caracter in concatenada)
+{
+    Console.WriteLine(caracter);
+}
+
+//buscar ocurrencia
+string buscar = "jr";
+if (concatenada.Contains(buscar))
+{
+    Console.WriteLine("La palabra fue encontrada.");
+}
+else
+{
+    Console.WriteLine("La palabra no fue encontrada.");
+}
+
+//Convertir a mayusculas y a minusculas
+Console.WriteLine("En mayusculas: "+concatenada.ToUpper());
+Console.WriteLine("En minusculas: "+concatenada.ToLower());
+
+//Separacion por caracteres
+Console.WriteLine("Ingrese una cadena con separacion de caracteres: ");
+string cadena3 = Console.ReadLine();
+string[] separados = cadena3.Split(',');
+foreach (var separado in separados)
+{
+    Console.WriteLine(separado);
 }
